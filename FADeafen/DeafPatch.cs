@@ -23,12 +23,11 @@ namespace FADeafen
 
         internal static bool PlayerHasEarPro()
         {
-            LootItemClass helm;
-
+            CompoundItem helm;
             if (player.Profile.Inventory.Equipment.GetSlot(EquipmentSlot.Earpiece).ContainedItem != null)
                 return true;
 
-            if ((helm = player.Profile.Inventory.Equipment.GetSlot(EquipmentSlot.Headwear).ContainedItem as LootItemClass) != null)
+            if ((helm = player.Profile.Inventory.Equipment.GetSlot(EquipmentSlot.Headwear).ContainedItem as CompoundItem) != null)
             {
                 SlotBlockerComponent blocker = helm.GetItemComponent<SlotBlockerComponent>();
                 if (blocker != null && blocker.ConflictingSlotNames.Contains("Earpiece"))
@@ -66,27 +65,12 @@ namespace FADeafen
         {
             if (!invokedByBot && (PlayerInfo.FC.Item.AmmoCaliber == "86x70" || PlayerInfo.FC.Item.AmmoCaliber == "127x108" || PlayerInfo.FC.Item.IsStationaryWeapon)) // THIRTY HURTY ATE
             {
-                try
-                {
                     PlayerInfo.player.ActiveHealthController.DoStun(1, 0);
                     PlayerInfo.player.ActiveHealthController.DoContusion(4, 50);
-                } catch (Exception e)
-                {
-                    Plugin.logger.LogError("Attempting to access ActiveHealthController resulted in an exception, falling back to PlayerHealthController" + e);
-                    PlayerInfo.player.PlayerHealthController.DoStun(1, 0);
-                    PlayerInfo.player.PlayerHealthController.DoContusion(4, 100);
-                }
+                
             }
-            try
-            {
                 PlayerInfo.player.ActiveHealthController.DoStun(1, 0);
                 PlayerInfo.player.ActiveHealthController.DoContusion(0, 100);
-            } catch (Exception e)
-            {
-                Plugin.logger.LogError("Attempting to access ActiveHealthController resulted in an exception, falling back to PlayerHealthController" + e);
-                PlayerInfo.player.PlayerHealthController.DoStun(1, 0);
-                PlayerInfo.player.PlayerHealthController.DoContusion(0, 100);
-            }
         }
     }
 

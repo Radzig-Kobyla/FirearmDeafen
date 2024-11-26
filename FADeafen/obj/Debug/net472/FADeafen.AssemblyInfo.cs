@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kobrakon-FirearmDeafen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3efbd08a926a0bd14eb86608985b391f3998f611")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kobrakon-FirearmDeafen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kobrakon-FirearmDeafen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

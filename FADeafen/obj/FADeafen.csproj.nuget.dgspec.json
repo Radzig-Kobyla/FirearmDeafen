@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MODDEV\\Development\\FirearmDeafen-1.1.0\\FADeafen\\FADeafen.csproj": {}
+    "C:\\Users\\Vadim\\FirearmDeafenbykobrakon-Reupload\\FADeafen\\FADeafen.csproj": {}
   },
   "projects": {
-    "F:\\MODDEV\\Development\\FirearmDeafen-1.1.0\\FADeafen\\FADeafen.csproj": {
+    "C:\\Users\\Vadim\\FirearmDeafenbykobrakon-Reupload\\FADeafen\\FADeafen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MODDEV\\Development\\FirearmDeafen-1.1.0\\FADeafen\\FADeafen.csproj",
+        "projectUniqueName": "C:\\Users\\Vadim\\FirearmDeafenbykobrakon-Reupload\\FADeafen\\FADeafen.csproj",
         "projectName": "Kobrakon-FirearmDeafen",
-        "projectPath": "F:\\MODDEV\\Development\\FirearmDeafen-1.1.0\\FADeafen\\FADeafen.csproj",
+        "projectPath": "C:\\Users\\Vadim\\FirearmDeafenbykobrakon-Reupload\\FADeafen\\FADeafen.csproj",
         "packagesPath": "C:\\Users\\Vadim\\.nuget\\packages\\",
-        "outputPath": "F:\\MODDEV\\Development\\FirearmDeafen-1.1.0\\FADeafen\\obj\\",
+        "outputPath": "C:\\Users\\Vadim\\FirearmDeafenbykobrakon-Reupload\\FADeafen\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
